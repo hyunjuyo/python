@@ -1,0 +1,5 @@
+from stackoverflow import extract_stackoverflow_pages, extract_stackoverflow_jobs
+
+last_page_stackoverflow = extract_stackoverflow_pages()
+
+r = extract_stackoverflow_jobs(last_page_stackoverflow)
