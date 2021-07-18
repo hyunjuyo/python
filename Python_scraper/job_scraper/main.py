@@ -1,5 +1,5 @@
-from stackoverflow import extract_stackoverflow_pages, extract_stackoverflow_jobs
+from sof import get_job_infos
+from save import save_to_csv
 
-last_page_stackoverflow = extract_stackoverflow_pages()
-
-r = extract_stackoverflow_jobs(last_page_stackoverflow)
+job_infos = get_job_infos()
+save_to_csv(job_infos)
