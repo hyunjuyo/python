@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+</head>
+
+<body>
+  <header>
+    <h1>{{id.title}}</h1>
+    <div>
+      {{id.points}} points | By {{id.author}} | 
+      <a href="{{id.url}}">{{id.url}}</a>
+    </div>
+  </header>
+  <main>
+    {% for child in children %}
+    <div>
+      <strong>{{child.author}}:</strong>
+      <!-- text 안에 있는 HTML태그를 그대로 가져오기 위해 safe 적용 -->
+      {{child.text|safe}}
+    </div>
+    <hr>
+    {% endfor %}
+  </main>
+</body>
+
+</html>
