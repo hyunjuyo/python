@@ -47,6 +47,8 @@ def solution(line):
 
     return answer
 
+
+# https://programmers.co.kr/learn/courses/30/lessons/87377
 line = [[2, -1, 4], [-2, -1, 4], [0, -1, 1], [5, -8, -12], [5, 8, 12]]
 
 solution(line)
